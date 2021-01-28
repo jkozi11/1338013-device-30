@@ -1,0 +1,393 @@
+@font-face {
+  font-family: "gilroy";
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"), url("../fonts/gilroyextrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gilroy";
+  src: url("../fonts/gilroylight.woff2") format("woff2"), url("../fonts/gilroylight.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "opensans";
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "opensans";
+  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: "gilroy", "Arial", open-sans;
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 47px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/*//////////////////////VISUALLY-HIDDEN//////////*/
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.reset-fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.reset-text {
+  margin: 0;
+}
+
+/*//////////////////////HEADER//////////*/
+
+.main-header {
+  position: relative;
+  background: #F7E296;
+}
+
+.main-header-logo {
+
+}
+
+.menu {
+  display:block;
+  position:absolute;
+  top:40px;
+}
+
+.menu > li {
+  display:inline-block;
+  height:20px;
+  position:relative;
+}
+
+.menu > li > ul {
+  position:absolute;
+  display:none;
+  background-color: #F7E296;
+  width: 550px;
+}
+
+.menu > li:hover > ul {
+  display:block;
+}
+
+.menu-title {
+  font-weight: 800;
+  font-size: 18px;
+
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+
+
+
+/*/////////////lOGIN-NAVIGATION///////////*/
+
+.site-navigation a {
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: #000000;
+}
+
+.site-navigation li {
+  position: relative;
+}
+
+.site-logo a::before {
+  position: absolute;
+  content: "";
+  top: 7px;
+  left: -11px;
+  width: 9px;
+  height: 10px;
+  background-image: url("../img/icon/login-header.svg");
+  background-repeat: 0 0;
+}
+
+.site-srav a::before {
+  position: absolute;
+  content: "";
+  top: 7px;
+  left: -11px;
+  width: 9px;
+  height: 10px;
+  background-image: url("../img/icon/header-srav.svg");
+  background-repeat: 0 0;
+}
+
+.site-cor a::before {
+  position: absolute;
+  content: "";
+  top: 7px;
+  left: -11px;
+  width: 10px;
+  height: 8px;
+  background-image: url("../img/icon/cor-header.svg");
+  background-repeat: 0 0;
+}
+
+/*/////////////HEADER-NAVIGATION/////////////*/
+
+.header-navigation a {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+
+/*////////////////SLIDER//////////////*/
+
+.slider-info-one {
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 15px;
+
+  color: #000000;
+}
+
+.slider-info-two {
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 15px;
+
+  color: #000000;
+}
+
+.slider-info-there {
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 15px;
+
+  color: #000000;
+}
+
+/*///////////////////TABLE///////////*/
+
+.table-title {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+
+  line-height: 42px;
+  letter-spacing: 0.1em;
+
+  color: #000000;
+}
+
+.table-info {
+  font-family: Gilroy;
+  font-weight: 300;
+  font-size: 13px;
+
+  letter-spacing: 0.1em;
+
+  color: #000000;
+}
+
+
+/*//////////////////ITEM_NAVIGATION////////////////*/
+
+.item-info{
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 18px;
+
+  letter-spacing: 0.05em;
+
+  color: #000000;
+}
+
+/*/////////////FEATURES/////////////*/
+
+.features-post {
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+/*/////////BRAND///////////////////////*/
+
+/*////////COMPANY_INFO/////////////*/
+
+.company-info-list p {
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+
+
+  color: #000000;
+
+}
+
+.contact-info {
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+
+
+  color: #000000;
+
+}
+
+/*////////////FOOTER///////////////*/
+
+.footer {
+  background: #363636;
+}
+
+.addres-title {
+  color: #F0C52E;
+}
+
+.addres-info {
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: #FFFFFF;
+}
+
+.footer-comfort a {
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+
+  color: #FFFFFF;
+}
+
+.login-list li {
+  position: relative;
+}
+
+.login-logo a::before {
+  position: absolute;
+  top: 7px;
+  left: -15px;
+  content: "";
+  width: 9px;
+  height: 10px;
+  background-image: url("../img/icon/footerl.svg");
+  background-repeat:  0 0;
+}
+
+.login-stat a::before {
+  position: absolute;
+  top: 7px;
+  left: -15px;
+  content: "";
+  width: 9px;
+  height: 10px;
+  background-image: url("../img/icon/footer-stat.svg");
+  background-repeat:  0 0;
+}
+
+.login-cor a::before {
+  position: absolute;
+  top: 7px;
+  left: -15px;
+  content: "";
+  width: 10px;
+  height: 8px;
+  background-image: url("../img/icon/footer-cor.svg");
+  background-repeat:  0 0;
+}
+
+.login-list a {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+
+.tel {
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: #FFFFFF;
+}
