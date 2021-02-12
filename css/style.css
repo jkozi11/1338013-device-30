@@ -797,7 +797,7 @@ input:focus ~ label {
   content: "";
   position: absolute;
   top: -63px;
-  right: -8px;
+  right: -7px;
 
   width: 8px;
   height: 320px;
@@ -850,14 +850,6 @@ input:focus ~ label {
 .features-title:hover::before {
   top: 0%;
   height: 100%;
-}
-
-.features-title:active::before {
-  width: 276px;
-  height: 40px;
-  padding-left: 23px;
-
-  background-color: var(--basic-black);
 }
 
 
@@ -945,6 +937,17 @@ input:focus ~ label {
   display: block;
 }
 
+#product-4:checked ~ .site-catalog label[for="product-4"]::before,
+#product-5:checked ~ .site-catalog label[for="product-5"]::before,
+#product-6:checked ~ .site-catalog label[for="product-6"]::before {
+  position: absolute;
+  top: 0px;
+  width: 276px;
+  height: 40px;
+  padding-left: 23px;
+  color: var(--basic-white);
+  background-color: var(--basic-black);
+}
 
 /*///////////////////TABLE///////////*/
 
