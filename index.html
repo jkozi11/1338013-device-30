@@ -18,10 +18,10 @@
       <h3 class="main-header-logo"><a href="#">DEVICE</a></h3>
       <section class="main-header-search">
         <h2 class="visually-hidden">Контант шапки</h2>
-        <div class="serch">
+        <div class="search-catalog">
           <input type="search" placeholder="Поиск по сайту" />
-          <label class="popap"></label>
-          <input type="submit" value="Найти" />
+          <label class="search-catalog-button"></label>
+          <input class="serch-btn" type="submit" value="Найти" />
           <ul class="menu reset-list">
             <li class="menu-sort">
               <a class="menu-title" href="catalog.html">Каталог товаров</a>
@@ -166,7 +166,7 @@
               </div>
               <div class="slider-wrapper-there">
                 <span class="slider-number">03</span>
-                <h3 class="slider-title">Порхает как бабочка,жалит как пчела!</h3>
+                <h3 class="slider-title">Порхает как бабочка, <br /> жалит как пчела!</h3>
                 <p class="slider-info-there">
                   Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
                 </p>
@@ -282,14 +282,14 @@
             </li>
             <li class="slider-catalog-item slide-catalog" id="slide5">
               <h3 class="slide-title-catalog">Гарантия</h3>
-              <p class="slide-info-catalog-two reset-text">Если из-за возгорания купленного у нас товара у вас сгорит дом —
-                не переживайте, мы выдадим вам новый.
-                Товар, не дом, конечно же.</p>
+              <p class="slide-info-catalog-two reset-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — <br />
+                не переживайте, мы выдадим вам новый. <br />
+                овар, не дом, конечно же.</p>
               </li>
               <li class="slider-catalog-item slide-catalog" id="slide6">
                 <h3 class="slide-title-catalog">Кредит</h3>
-                <p class="slide-info-catalog-there reset-text">Залезть в долговую яму стало проще! Кредитные консультанты
-                  подберут для вас наиболее выгодные
+                <p class="slide-info-catalog-there reset-text">Залезть в долговую яму стало проще! Кредитные консультанты <br />
+                  подберут для вас  наиболее выгодные <br />
                   условия кредита. Выгодные для нашего банка, разумеется.</p>
                 </li>
               </ul>
@@ -468,19 +468,20 @@
         </section>
       </footer>
 
-      <section class="modal">
-        <form class="" action="" method="post">
+      <section class="modal modal-login">
+        <h2 class="visually-hidden">Напишите нам</h2>
+        <form class="name-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="modal-name">
-            <label for="">Ваше имя</label>
-            <input id="" type="text" name="" placeholder="Имя фамилия"/>
+            <label for="name-field">Ваше имя</label>
+            <input class="pop" id="name-field" type="text" name="first" placeholder="Имя фамилия"/>
           </div>
           <div class="modal-email">
-            <label for="">Ваш e-mail</label>
-            <input id="" type="e-mail" name="" placeholder="email@example.ru">
+            <label for="email-field">Ваш e-mail</label>
+            <input id="email-field" type="email" name="email" placeholder="email@example.ru">
           </div>
           <div class="modal-text">
             <label for="comment-field">Текст письма:</label>
-            <textarea class="chat" name="" id="" rows="10" cols="10" placeholder="В свободной форме"></textarea>
+            <textarea class="chat" name="comment" id="comment-field" rows="10" cols="10" placeholder="В свободной форме"></textarea>
           </div>
           <button class="modal-close" type="button">
             <span class="visually-hidden">Закрыть</span>
@@ -491,5 +492,10 @@
         </form>
       </section>
 
+      <section class="modal modal-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.11237494734!2d37.527429315658864!3d55.68703400453028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1613565994461!5m2!1sru!2sru" width="994" height="593" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <button></button>
+      </section>
     </body>
     </html>
