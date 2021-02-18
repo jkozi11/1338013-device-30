@@ -273,6 +273,7 @@ input[type="search"] {
   position: relative;
 
   padding-left: 40px;
+  width: 360px;
 
   border: none;
   background-color: var(--special-yellow-light);
@@ -288,7 +289,7 @@ input[type="search"]:hover {
 }
 
 
-input[type="submit"] {
+.serch-btn {
   position: absolute;
   top: 0px;
   right: 96px;
@@ -302,13 +303,13 @@ input[type="submit"] {
 }
 
 
-input[type="submit"]:focus {
+.serch-btn:focus {
   display: block;
   color: rgba(255, 255, 255, 0.3);
   background-color: black;
 }
 
-input[type="submit"]:hover {
+.serch-btn:hover {
   position: absolute;
   top: 0px;
   right: 96px;
@@ -320,7 +321,6 @@ input[type="submit"]:hover {
   background-color: var(--basic-black);
   color: var(--basic-white);
 }
-
 
 .search-catalog-button {
   content: "";
@@ -335,7 +335,7 @@ input[type="submit"]:hover {
   background: var(--basic-black);
 }
 
-input:focus ~ input[type="submit"] {
+input:focus ~ .serch-btn {
   display: block;
 }
 
@@ -958,6 +958,8 @@ input:focus ~ label {
 #product-5:checked ~ .site-catalog label[for="product-5"],
 #product-6:checked ~ .site-catalog label[for="product-6"] {
   position: relative;
+  color: var(--basic-white);
+  z-index: 2;
   display: block;
 }
 
@@ -966,10 +968,10 @@ input:focus ~ label {
 #product-6:checked ~ .site-catalog label[for="product-6"]::before {
   position: absolute;
   top: 0px;
+  z-index: -1;
   width: 276px;
   height: 40px;
   padding-left: 23px;
-  color: var(--basic-white);
   background-color: var(--basic-black);
 }
 
@@ -2479,6 +2481,11 @@ input[type=radio]:not(:checked):disabled + label::before {
   background-color: var(--basic-white);
 }
 
+.name-form textarea:hover {
+  background-color: #EAEAEA;
+}
+
+
 .modal-map iframe {
-    box-shadow: 0 0 15px 3px var(--basic-black);
+  box-shadow: 0 0 15px 3px var(--basic-black);
 }
