@@ -51,7 +51,7 @@
   padding: 0;
   font-size: 15px;
   line-height: 24px;
-  font-family: "gilroy", "Arial", opensans;
+  font-family: "gilroy", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
   color: #000000;
@@ -180,13 +180,13 @@ main {
   background-image: url("../img/crest.png");
 }
 
-.menu > li {
+.menu-sort {
   display:inline-block;
   height:20px;
   position:relative;
 }
 
-.menu > li > ul {
+.menu-list {
   position: absolute;
   left: -59px;
   z-index: 1;
@@ -202,12 +202,11 @@ main {
   gap: 10px;
 
   background-color: var(--special-yellow-light);
-  opacity: 0;
-  transition: opacity 0.5s;
+  visibility: hidden;
 }
 
-.menu > li:hover > ul {
-  opacity: 1;
+.menu-sort:focus-within .menu-list {
+  visibility: visible;
 }
 
 .menu-title:active {
@@ -272,6 +271,7 @@ main {
 input[type="search"] {
   position: relative;
 
+  margin-top: 18px;
   padding-left: 40px;
   width: 360px;
 
@@ -371,7 +371,7 @@ input:focus ~ label {
 
 .login-navigation {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 65px;
 }
 
 .header-navigation {
@@ -552,8 +552,8 @@ input:focus ~ label {
 
   display: inline-block;
   width: 12px;
-  height: 13px;
-  margin-right: 17px;
+  height: 11px;
+  margin-right: 21px;
 
   background: #ffffff;
   border: 1px solid var(--basic-black);
@@ -579,7 +579,7 @@ input:focus ~ label {
 
 .slider-controls {
   position: absolute;
-  right: 70px;
+  right: 62px;
   bottom: 200px;
   z-index: 1;
 
@@ -637,10 +637,10 @@ input:focus ~ label {
 
 .slider-title {
   position: relative;
-  width: 391px;
-  margin-bottom: 29px;
-
-  line-height: 53px;
+  width: 393px;
+  margin-bottom: 23px;
+  line-height: 55px;
+  letter-spacing: 0.3px;
 }
 
 .slider-title::before {
@@ -670,10 +670,13 @@ input:focus ~ label {
 
 .slider-info-one {
   font-family: Open Sans;
-  line-height: 26px;
-  color: var(--basic-black);
+  line-height: 28px;
 
+  color: var(--basic-black);
   margin-bottom: 46px;
+  letter-spacing: 0.1px;
+
+  max-width: 484px;
 }
 
 .slider-info-two {
@@ -732,11 +735,11 @@ input:focus ~ label {
 #product-3:checked ~ .site-wrapper label[for="product-3"]::before {
   position: absolute;
   content: "";
-  top: 27%;
-  left: 25%;
+  top: 25%;
+  left: 28%;
 
-  width: 5px;
-  height: 5px;
+  width: 4px;
+  height: 4px;
 
   border: 1px solid var(--basic-black);
   border-radius: 50%;
@@ -747,7 +750,7 @@ input:focus ~ label {
 
   display: inline-block;
   width: 220px;
-  height: 40px;
+  min-height: 40px;
   padding: 10px 20px;
 
   font-family: Gilroy;
@@ -771,15 +774,15 @@ input:focus ~ label {
   z-index: -1;
 
   width: 100%;
-  height: 8px;
+  min-height: 8px;
 
   background-color: var(--special-yellow-dark);
-  transition: top 0.5s, height 0.5s;
+  transition: top 0.5s, min-height 0.5s;
 }
 
 .button-slider:hover::before {
-  top: 0%;
-  height: 100%;
+  top: 0px;
+  min-height: 100%;
 }
 
 .button-slider:active {
@@ -831,9 +834,9 @@ input:focus ~ label {
 
   display: grid;
   margin-bottom: 24px;
-  margin-top: 15px;
+  margin-top: 17px;
   padding-top: 10px;
-  height: 40px;
+  min-height: 40px;
   width: 160px;
 
   font-family: Gilroy;
@@ -858,11 +861,11 @@ input:focus ~ label {
   z-index: -1;
 
   width: 100%;
-  height: 10px;
+  min-height: 10px;
 
   background-color: var(--special-yellow-dark);
   color: var(--basic-black);
-  transition: top 0.5s, height 0.5s, background-color 0.5s, width 0.5s;
+  transition: top 0.5s, min-height 0.5s, background-color 0.5s, width 0.5s;
 }
 
 .features-list {
@@ -871,7 +874,7 @@ input:focus ~ label {
 
 .features-title:hover::before {
   top: 0%;
-  height: 100%;
+  min-height: 100%;
 }
 
 
@@ -1015,14 +1018,13 @@ input:focus ~ label {
   justify-content: space-between;
 }
 
-.item-info{
+.item-info {
   width: 160px;
   margin-top: 32px;
   font-family: Gilroy;
   font-weight: 800;
   font-size: 18px;
-
-  color: var(--basic-black);
+  color: black;
 }
 
 .item-list div {
@@ -1149,7 +1151,12 @@ input:focus ~ label {
   margin-top: 38px;
   width: 479px;
 
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 15px;
   line-height: 28px;
+
+  color: var(--basic-black);
 }
 
 .contact-info {
@@ -1162,14 +1169,16 @@ input:focus ~ label {
 }
 
 .work {
-  margin-top: 76px;
-  margin-bottom: 58px;
+  margin-top: 73px;
+  margin-bottom: 62px;
+  padding-left: 16px;
 
   list-style-type: circle;
 }
 
 .work-list {
-  margin-top: -3px;
+  padding-left: 20px;
+  margin-bottom: -4px;
 }
 
 .work-info {
@@ -1193,7 +1202,7 @@ input:focus ~ label {
   display: inline-block;
   position: relative;
   width: 260px;
-  height: 40px;
+  min-height: 40px;
   padding-top: 9px;
 
   font-family: Gilroy;
@@ -1216,15 +1225,15 @@ input:focus ~ label {
   z-index: -1;
 
   width: 100%;
-  height: 8px;
+  min-height: 8px;
 
   background-color: var(--special-yellow-dark);
-  transition: top 0.5s, height 0.5s;
+  transition: top 0.5s, min-height 0.5s;
 }
 
 .button-style:hover::before {
   top: 0%;
-  height: 100%;
+  min-height: 100%;
 }
 
 .button-style:active {
@@ -1243,12 +1252,14 @@ margin-left: 13px;
 .page-catalog {
   display: grid;
   grid-template-columns: 328px 1fr;
-  grid-template-rows: 112px;
+  grid-template-rows: 108px;
 }
 
 .main-title {
   grid-column: 1 / -1;
   margin-left: 60px;
+
+  letter-spacing: 0.5px;
 }
 
 .main-list {
@@ -1274,6 +1285,8 @@ margin-left: 13px;
   position: relative;
 
   margin-right: 38px;
+
+  letter-spacing: 0.1px;
 }
 
 .main-list a:hover {
@@ -1439,10 +1452,14 @@ margin-left: 13px;
   font-family: Gilroy;
   font-weight: 800;
   font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.05em;
+  line-height: 25px;
+  letter-spacing: 0.3px;
 
   color: var(--basic-black);
+}
+
+.desct-info {
+  letter-spacing: 0.6px;
 }
 
 .catalog-range {
@@ -1684,8 +1701,8 @@ li.catalog-item:hover section.catalog-info {
 }
 
 .bluetooth {
-  margin-top: 37px;
-  margin-bottom: 31px;
+  margin-top: 41px;
+  margin-bottom: 30px;
 }
 
 .bluetooth-title {
@@ -1725,7 +1742,12 @@ li.catalog-item:hover section.catalog-info {
   top: 2px;
   left: 38px;
 
-  letter-spacing: 1px;
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: var(--basic-black);
 }
 
 input[type=checkbox],
@@ -1862,14 +1884,14 @@ input[type=radio]:not(:checked):disabled + label::before {
   width: 760px;
   height: 70px;
   margin-bottom: 75px;
-  margin-top: 18px;
+  margin-top: 9px;
 
-  background: var(--basic-grey-light)
+  background: var(--basic-grey-light);
 }
 
 .pagination {
   display: flex;
-  margin-left: 36px;
+  margin-right: 24px;
 }
 
 .pagination-item a {
@@ -1903,7 +1925,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 .button-back {
   width: 120px;
   height: 70px;
-  padding-left: 15px;
+  padding-left: 29px;
 
   font-family: Gilroy;
   font-weight: 800;
@@ -2006,6 +2028,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 
   font-family: Open Sans;
   line-height: 20px;
+  letter-spacing: 0.3px;
 
   color: var(--basic-white);
 }
@@ -2032,7 +2055,7 @@ input[type=radio]:not(:checked):disabled + label::before {
   grid-column-start: 2;
   grid-row-start: 2;
   grid-column-end: 4;
-  margin-left: 136px;
+  margin-left: 128px;
 }
 
 .footer-comfort-catalog a {
@@ -2095,7 +2118,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 .footer-social {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 22px;
+  margin-right: 32px;
 }
 
 .footer-social li {
@@ -2293,12 +2316,25 @@ input[type=radio]:not(:checked):disabled + label::before {
 /*///////////MODAL///////////////////*/
 
 .modal {
-  position: relative;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 
+  margin: auto;
   width: 960px;
   height: 550px;
 
   background-color: var(--basic-white);
+}
+
+.modal-map {
+  display: none;
+}
+
+.modal-login {
+  display: none;
 }
 
 .modal-name {
