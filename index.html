@@ -5,7 +5,7 @@
   <title>Device</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico" />
   <link rel="icon" href="img/faviicon32.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="img/faviicon512.svg" />
@@ -20,13 +20,14 @@
         <h2 class="visually-hidden">Контант шапки</h2>
         <div class="search-catalog">
           <form class="form-search" action="https://echo.htmlacademy.ru/courses" method="post">
-            <input type="search" name="search" id="search" autocomplete="off" placeholder="Поиск по сайту" autofocus />
-            <label class="search-catalog-button"></label>
-            <button class="serch-btn" type="submit">Найти</button>
+            <label class="search-catalog-button">
+              <input class="pop" type="search" name="search" autocomplete="off" placeholder="Поиск по сайту" autofocus />
+              <button class="serch-btn" type="submit">Найти</button>
+            </label>
           </form>
           <ul class="menu reset-list">
             <li class="menu-sort">
-              <a class="menu-title" href=" ">Каталог товаров</a>
+              <a class="menu-title" href="#">Каталог товаров</a>
               <ul class="menu-list reset-list">
                 <li class="menu-item">
                   <a class="item" href="catalog.html">Виртуальная реальность</a>
@@ -362,10 +363,12 @@
               <div class="map">
                 <section>
                   <h2 class="visually-hidden">Карта</h2>
+                  <a href="#" class="contacts-button-map">
                   <img src="img/map.png" width="560" height="222" alt="Наше местоположение" />
+                  </a>
                 </section>
               </div>
-              <a href="#" class="button-style">Напишите нам</a>
+              <a href="#" class="button-say button-style">Напишите нам</a>
             </section>
           </section>
         </section>
@@ -479,7 +482,7 @@
           </div>
           <div class="modal-email">
             <label for="email-field">Ваш e-mail</label>
-            <input id="email-field" type="email" name="email" placeholder="email@example.ru">
+            <input class="pop-email" id="email-field" type="email" name="email" placeholder="email@example.ru">
           </div>
           <div class="modal-text">
             <label for="comment-field">Текст письма:</label>
@@ -501,5 +504,7 @@
           <span class="visually-hidden">Закрыть</span>
         </button>
       </section>
+      <script src='js/javascript.min.js'></script>
+      <script src="js/map.min.js"></script>
     </body>
     </html>

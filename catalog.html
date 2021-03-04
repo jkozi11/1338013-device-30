@@ -19,10 +19,11 @@
       <section class="main-header-catalog">
         <h2 class="visually-hidden">Контант шапки</h2>
         <div class="search-catalog">
-          <form action="https://echo.htmlacademy.ru/courses" method="post">
-            <input type="search" name="search" id="search" autocomplete="off" placeholder="Поиск по сайту" autofocus />
-            <label class="search-catalog-button"></label>
-            <input class="serch-btn" type="submit" value="Найти">
+          <form class="form-search" action="https://echo.htmlacademy.ru/courses" method="post">
+            <label class="search-catalog-button">
+              <input class="pop" type="search" name="search" autocomplete="off" placeholder="Поиск по сайту" autofocus />
+              <button class="serch-btn" type="submit">Найти</button>
+            </label>
           </form>
           <ul class="menu reset-list">
             <li class="menu-sort">
@@ -160,7 +161,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button-present" type="submit">Показать</button>
+          <button class="button-present button" type="submit">Показать</button>
         </form>
       </section>
       <section class="catalog">
@@ -211,7 +212,7 @@
               </section>
               <article class="desct">
                 <h4 class="desct-title">
-                  Любительская селфи-палка
+                  <a href="#">Любительская селфи-палка</a>
                 </h4>
                 <p class="desct-info">
                   500 руб.
@@ -231,7 +232,7 @@
               </section>
               <article class="desct">
                 <h4 class="desct-title">
-                  Профессиональная <br /> селфи палка
+                  <a href="#">Профессиональная <br /> селфи палка</a>
                 </h4>
                 <p class="desct-info">
                   1 500 руб.
@@ -251,7 +252,7 @@
               </section>
               <article class="desct">
                 <h4 class="desct-title">
-                  Непотопляемая селфи-палка
+                  <a href="#">Непотопляемая селфи-палка</a>
                 </h4>
                 <p class="desct-info">
                   2 500 руб.
@@ -271,7 +272,7 @@
               </section>
               <article class="desct">
                 <h4 class="desct-title">
-                  Селфи-палка "Следуй за мной"
+                  <a href="#">Селфи-палка "Следуй за мной"</a>
                 </h4>
                 <p class="desct-info">
                   4 900 руб.
@@ -280,7 +281,7 @@
             </li>
           </ul>
           <nav class="pagination-nav">
-            <a class="button-back">Назад</a>
+            <a href="#" class="button-back">Назад</a>
             <ul class="pagination reset-list">
               <li  class="pagination-item">
                 <a class="active-pagination" href="#">1</a>
@@ -292,7 +293,7 @@
                 <a href="#">3</a>
               </li>
             </ul>
-            <a class="button-go">Вперед</a>
+            <a href="#" class="button-go">Вперед</a>
           </nav>
         </section>
       </section>
