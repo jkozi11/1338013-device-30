@@ -184,6 +184,7 @@ main {
 
 .menu-sort {
   display:inline-block;
+  vertical-align: top;
   height:20px;
   position:relative;
 }
