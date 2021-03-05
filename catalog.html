@@ -20,10 +20,8 @@
         <h2 class="visually-hidden">Контант шапки</h2>
         <div class="search-catalog">
           <form class="form-search" action="https://echo.htmlacademy.ru/courses" method="post">
-            <label class="search-catalog-button">
-              <input class="pop" type="search" name="search" autocomplete="off" placeholder="Поиск по сайту" autofocus />
-              <button class="serch-btn" type="submit">Найти</button>
-            </label>
+            <input class="pop" type="search" name="search" autocomplete="off" placeholder="Поиск по сайту" autofocus />
+            <button class="serch-btn" type="submit">Найти</button>
           </form>
           <ul class="menu reset-list">
             <li class="menu-sort">
@@ -102,7 +100,7 @@
       <h2 class="visually-hidden">Фильтр</h2>
       <section class="filter">
         <h3 class="filter-title">Фильтр:</h3>
-        <form class="filter-post" method="post">
+        <form class="filter-post" action="https://echo.htmlacademy.ru/courses" method="post">
           <fieldset class="filter-block reset-fieldset">
             <legend class="filter-value">Стоимость:</legend>
             <div class="range-filter">
@@ -114,8 +112,8 @@
                 <div class="toggle toggle-max"></div>
               </div>
               <div class="price-controls">
-                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+                <label aria-label="min-price" class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label aria-label="max-price" class="max-price">до <input name="max-price" type="text" value="5000"></label>
               </div>
             </div>
           </fieldset>
@@ -126,23 +124,23 @@
             <ul class="reset-list">
               <li class="option-check-list">
                 <input type="checkbox" name="color" value="black" id="color-balck" checked />
-                <label for="color-balck"><span class="check-box" tabindex="0">Черный</span></label>
+                <label aria-label="color-balck" for="color-balck"><span class="check-box" tabindex="0">Черный</span></label>
               </li>
               <li class="option-check-list">
                 <input type="checkbox" name="color" value="white" id="color-white"/>
-                <label for="color-white"><span class="check-box" tabindex="0">Белый</span></label>
+                <label aria-label="color-white" for="color-white"><span class="check-box" tabindex="0">Белый</span></label>
               </li>
               <li class="option-check-list">
                 <input type="checkbox" name="color" value="blue" id="color-blue" checked />
-                <label for="color-blue"><span class="check-box" tabindex="0">Синий</span></label>
+                <label aria-label="color-blue" for="color-blue"><span class="check-box" tabindex="0">Синий</span></label>
               </li>
               <li class="option-check-list">
                 <input type="checkbox" name="color" value="red" id="color-red" checked />
-                <label for="color-red"><span class="check-box" tabindex="0">Красный</span></label>
+                <label aria-label="color-red" for="color-red"><span class="check-box" tabindex="0">Красный</span></label>
               </li>
               <li class="option-check-list">
                 <input type="checkbox" name="color" value="pink" id="color-pink"/>
-                <label for="color-pink"><span class="check-box" tabindex="0">Розовый</span></label>
+                <label aria-label="color-pink" for="color-pink"><span class="check-box" tabindex="0">Розовый</span></label>
               </li>
             </ul>
           </fieldset>
@@ -153,11 +151,11 @@
             <ul class="bluetooth-one reset-list">
               <li>
                 <input type="radio" name="Bluetooth" value="yes" id="Bluetooth-yes" checked>
-                <label for="Bluetooth-yes" tabindex="0"><span class="check-box">Есть</span></label>
+                <label aria-label="Bluetooth-yes" for="Bluetooth-yes" tabindex="0"><span class="check-box">Есть</span></label>
               </li>
               <li>
                 <input type="radio" name="Bluetooth" value="no" id="Bluetooth-no">
-                <label for="Bluetooth-no" tabindex="0"><span class="check-box">Нет</span></label>
+                <label aria-label="Bluetooth-no" for="Bluetooth-no" tabindex="0"><span class="check-box">Нет</span></label>
               </li>
             </ul>
           </fieldset>
