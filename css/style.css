@@ -131,7 +131,7 @@ h3 {
 /*//////////////////////HEADER//////////*/
 
 main {
-  margin-top: 55px;
+  margin-top: 48px;
 }
 
 .main-header {
@@ -794,7 +794,7 @@ input[type="search"]:hover {
 
 .site-catalog {
   position: relative;
-  margin-top: 125px;
+  margin-top: 130px;
 }
 
 .site-catalog::before {
@@ -830,8 +830,8 @@ input[type="search"]:hover {
 
   display: grid;
   margin-bottom: 24px;
-  margin-top: 17px;
-  padding-top: 10px;
+  margin-top: 15px;
+  padding-top: 6px;
   min-height: 40px;
   width: 160px;
 
@@ -852,7 +852,7 @@ input[type="search"]:hover {
 .features-title:before {
   content: "";
   position: absolute;
-  top: calc(50% - 5px);
+  top: calc(50% - 9px);
   left: 0px;
   z-index: -1;
 
@@ -869,7 +869,7 @@ input[type="search"]:hover {
 }
 
 .features-title:hover::before {
-  top: 0%;
+  top: -7%;
   min-height: 100%;
 }
 
@@ -877,7 +877,7 @@ input[type="search"]:hover {
 .slide-title-catalog {
   margin: 0;
   margin-top: 8px;
-  letter-spacing: 1px;
+  letter-spacing: 9.4px;
 }
 
 
@@ -886,31 +886,44 @@ input[type="search"]:hover {
 }
 
 .slide-info-catalog-one {
-  width: 453px;
-  margin-top: 43px;
+  width: 515px;
+  margin-top: 58px;
 
-  line-height: 29px;
-  letter-spacing: 0.3px;
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+
+  letter-spacing: 0.1em;
 }
 
 .slide-info-catalog-two {
-  width: 495px;
-  margin-top: 48px;
+  width: 571px;
+  margin-top: 58px;
 
-  line-height: 29px;
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
 }
 
 .slide-info-catalog-there {
-  width: 495px;
-  margin-top: 48px;
+  width: 548px;
+  margin-top: 57px;
 
-  line-height: 29px;
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
 }
 
 .slider-catalog-item:first-child::before {
   content: "";
   position: absolute;
-  right: 64px;
+  right: 1px;
+  top: -15px;
 
   width: 136px;
   height: 164px;
@@ -923,8 +936,8 @@ input[type="search"]:hover {
 .slider-catalog-item:nth-child(2)::before {
   content: "";
   position: absolute;
-  right: 35px;
-  bottom: 8px;
+  right: -11px;
+  bottom: 16px;
 
   width: 166px;
   height: 190px;
@@ -937,8 +950,8 @@ input[type="search"]:hover {
 .slider-catalog-item:last-child::before {
   content: "";
   position: absolute;
-  right: 50px;
-  bottom: 9px;
+  right: 9px;
+  bottom: 24px;
 
   width: 155px;
   height: 187px;
@@ -1067,7 +1080,7 @@ input[type="search"]:hover {
 .item-img-mono {
   position: absolute;
   left: 0;
-  bottom: 2px;
+  bottom: 18px;
   right: 0;
 
   margin: auto;
@@ -1079,7 +1092,7 @@ input[type="search"]:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 211px;
+  margin-top: 207px;
 }
 
 .brand-item  {
@@ -1104,19 +1117,21 @@ input[type="search"]:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 38px;
-  margin-top: 101px;
+  margin-top: 106px;
 }
 
 .company-title {
   position: relative;
 
-  margin-bottom: 55px;
+  margin-bottom: 61px;
+
+  letter-spacing: 10px;
 }
 
 .company-title::before {
   content: "";
   position: absolute;
-  top: -63px;
+  top: -72px;
   width: 80px;
 
   border-top: 7px solid var(--basic-black)
@@ -1124,12 +1139,15 @@ input[type="search"]:hover {
 
 .contact-title {
   position: relative;
+  margin-bottom: 59px;
+
+  letter-spacing: 10px;
 }
 
 .contact-title::before {
   content: "";
   position: absolute;
-  top: -63px;
+  top: -72px;
 
   width: 80px;
 
@@ -1159,17 +1177,17 @@ input[type="search"]:hover {
 
 .contact-info {
   margin-top: 55px;
-  margin-bottom: 45px;
+  margin-bottom: 41px;
 }
 
 .map {
-  margin-bottom: 59px;
+  margin-bottom: 68px;
 }
 
 .work {
-  margin-top: 73px;
-  margin-bottom: 62px;
-  padding-left: 16px;
+  margin-top: 62px;
+  margin-bottom: 76px;
+  padding-left: 13px;
 
   list-style: none;
 }
@@ -1265,7 +1283,8 @@ margin-left: 13px;
 .page-catalog {
   display: grid;
   grid-template-columns: 328px 1fr;
-  grid-template-rows: 108px;
+  grid-template-rows: 118px;
+  margin-top: 17px;
 }
 
 .main-title {
@@ -1425,11 +1444,11 @@ margin-left: 13px;
 }
 
 .catalog-item:nth-child(3) {
-  margin-top: 26px;
+  margin-top: 20px;
 }
 
 .catalog-item:last-child {
-  margin-top: 26px;
+  margin-top: 20px;
 }
 
 .catalog-item:last-child::before {
@@ -1552,7 +1571,7 @@ li.catalog-item:hover section.catalog-info {
 /*//////////////////FILET////////////////////////*/
 
 .filter-post {
-  margin-top: 85px;
+  margin-top: 88px;
   margin-left: 59px;
 }
 
@@ -1689,6 +1708,10 @@ li.catalog-item:hover section.catalog-info {
   text-align: right;
 }
 
+.option {
+  margin-top: 6px;
+}
+
 .option-title {
   position: relative;
   margin-bottom: 28px;
@@ -1720,7 +1743,7 @@ li.catalog-item:hover section.catalog-info {
 }
 
 .bluetooth {
-  margin-top: 41px;
+  margin-top: 34px;
   margin-bottom: 30px;
 }
 
@@ -1989,7 +2012,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 /*////////////FOOTER-global///////////////*/
 
 .footer {
-  margin-top: 81px;
+  margin-top: 77px;
   height: 324px;
 
   background: var(--basic-dark);
@@ -2019,7 +2042,7 @@ input[type=radio]:not(:checked):disabled + label::before {
   display: grid;
   grid-template-columns: max-content 1fr 1fr;
   grid-template-rows: 100px 100px 100px;
-  margin-top: 25px;
+  margin-top: 27px;
 }
 
 /*///////////////////Footer-adres///////////////*/
@@ -2171,7 +2194,7 @@ input[type=radio]:not(:checked):disabled + label::before {
   grid-template-columns: 1fr 1fr 60px;
   align-self: center;
   justify-self: self-end;
-  margin-top: 11px;
+  margin-bottom: 36px;
 }
 
 .login-list li {
@@ -2182,7 +2205,7 @@ input[type=radio]:not(:checked):disabled + label::before {
   content: "";
   position: absolute;
   top: 7px;
-  left: -15px;
+  left: -23px;
 
   width: 9px;
   height: 10px;
@@ -2221,7 +2244,7 @@ input[type=radio]:not(:checked):disabled + label::before {
   display: grid;
   align-self: center;
   justify-self: self-end;
-  margin-top: 11px;
+  margin-top: -31px;
   grid-template-columns: max-content 1fr 1fr 60px;
 }
 
@@ -2277,7 +2300,7 @@ input[type=radio]:not(:checked):disabled + label::before {
   content: "";
   position: absolute;
   top: 7px;
-  left: -15px;
+  left: -21px;
 
   width: 9px;
   height: 10px;
@@ -2290,8 +2313,8 @@ input[type=radio]:not(:checked):disabled + label::before {
 .login-cor a::before {
   content: "";
   position: absolute;
-  top: 7px;
-  left: -15px;
+  top: 6px;
+  left: -22px;
 
   width: 10px;
   height: 8px;
